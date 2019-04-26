@@ -35,12 +35,11 @@ Bu alanda 4 veri dönmektedir bunlar;
  - position  : Takımın ligde bulunduğu sıralama
  - points : Takımın topladığı puan
 
-    $simpleStandings  =  $api->getSimpleStandings();
-    foreach ($simpleStandings  as  $team) {
-	    print  $team->name;
-	    print  $team->shortName;
-	    print  $team->position;
-	    print  $team->points;
+ $teamNames  =  $api->getTeamNames();
+    foreach ($teamNames  as  $team) {
+    	print  $team->name;
+    	print  $team->middleName;
+    	print  $team->shortName;
     }
 
 **Detaylı Puan Durumunun Alınması**
