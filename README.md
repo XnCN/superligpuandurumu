@@ -1,6 +1,6 @@
 ## SüperLig Puan Durumu
 
-Türkiye Süper Ligi Puan Durumu , ve takımların genel istatisliklerini görebileceğimiz basit kullanımlı ve özelleştirilebilir php kütüphanesidir.Veriler ntvspor aracılığı ile broadage üzerinden alınmaktadır.
+Türkiye Süper Ligi Puan Durumu ve takımların genel istatisliklerini görebileceğimiz basit kullanımlı ve özelleştirilebilir php kütüphanesidir.Veriler ntvspor aracılığı ile broadage üzerinden alınmaktadır.
 
 ## Özellikleri
  - Süper Lig takımlarının listesi
