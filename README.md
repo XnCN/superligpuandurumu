@@ -22,11 +22,11 @@ Bu alanda 3 adet veri dönmektedir , bunlar;
  - shortName : Takımın kısa adı
 ```
 $teamNames  =  $api->getTeamNames();
-    foreach ($teamNames  as  $team) {
+foreach ($teamNames  as  $team) {
     	print  $team->name;
     	print  $team->middleName;
     	print  $team->shortName;
-    }
+}
 ```
 **Basit Puan Durumunun Alınması**
 Bu alanda 4 veri dönmektedir bunlar;
@@ -36,11 +36,11 @@ Bu alanda 4 veri dönmektedir bunlar;
  - points : Takımın topladığı puan
 ```
  $teamNames  =  $api->getTeamNames();
-    foreach ($teamNames  as  $team) {
+ foreach ($teamNames  as  $team) {
     	print  $team->name;
     	print  $team->middleName;
     	print  $team->shortName;
-    }
+ }
 ```
 **Detaylı Puan Durumunun Alınması**
 Bu alanda 11 veri dönmektedir bunlar;
