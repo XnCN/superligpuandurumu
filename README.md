@@ -17,9 +17,9 @@ Kütüphanenin dahil edilmesi ve kullanıma hazırlanması
 
 **Takım İsim Listesinin Alınması**
 Bu alanda 3 adet veri dönmektedir , bunlar;
-name : Takımın tam adı
-middleName : Takımın kısaltmalı adı
-shortName : Takımın kısa adı
+ - name : Takımın tam adı
+ - middleName : Takımın kısaltmalı adı
+ - shortName : Takımın kısa adı
 
     $teamNames  =  $api->getTeamNames();
     foreach ($teamNames  as  $team) {
@@ -30,10 +30,10 @@ shortName : Takımın kısa adı
 
 **Basit Puan Durumunun Alınması**
 Bu alanda 4 veri dönmektedir bunlar;
-name : Takımın adı
-shortName : Takımın kısa adı
-position  : Takımın ligde bulunduğu sıralama
-points : Takımın topladığı puan
+ - name : Takımın adı
+ - shortName : Takımın kısa adı
+ - position  : Takımın ligde bulunduğu sıralama
+ - points : Takımın topladığı puan
 
     $simpleStandings  =  $api->getSimpleStandings();
     foreach ($simpleStandings  as  $team) {
@@ -45,29 +45,29 @@ points : Takımın topladığı puan
 
 **Detaylı Puan Durumunun Alınması**
 Bu alanda 11 veri dönmektedir bunlar;
-name : Takımın adı
-middleName : Takımın kısaltmalı adı
-shortName : Takımın kısa adı
-position  : Takımın ligde bulunduğu sıralama
-points : Takımın topladığı puan
-against : Takımın yediği gol sayısı
-average : Takımın attığı ve yediği goller arasındaki fark
-lost : Kaybedilen maç sayısı
-played :Oynanılan maç sayısı
-won : Kazanılan maç sayısı
-logo: Takımın logosunun web adresi
+ - name : Takımın adı
+ - middleName : Takımın kısaltmalı adı
+ - shortName : Takımın kısa adı
+ - position  : Takımın ligde bulunduğu sıralama
+ - points : Takımın topladığı puan
+ - against : Takımın yediği gol sayısı
+ - average : Takımın attığı ve yediği goller arasındaki fark
+ - lost : Kaybedilen maç sayısı
+ - played :Oynanılan maç sayısı
+ - won : Kazanılan maç sayısı
+ - logo: Takımın logosunun web adresi
 
     $standings  =  $api->getStandings();
     foreach ($standings  as  $team) {
-    print  $team->name;
-    print  $team->middleName;
-    print  $team->shortName;
-    print  $team->position;
-    print  $team->points;
-    print  $team->against;
-    print  $team->average;
-    print  $team->lost;
-    print  $team->played;
-    print  $team->won;
-    print  $team->logo;
+	    print  $team->name;
+	    print  $team->middleName;
+	    print  $team->shortName;
+	    print  $team->position;
+	    print  $team->points;
+	    print  $team->against;
+	    print  $team->average;
+	    print  $team->lost;
+	    print  $team->played;
+	    print  $team->won;
+	    print  $team->logo;
     }
