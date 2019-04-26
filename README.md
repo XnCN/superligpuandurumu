@@ -20,28 +20,28 @@ Bu alanda 3 adet veri dönmektedir , bunlar;
  - name : Takımın tam adı
  - middleName : Takımın kısaltmalı adı
  - shortName : Takımın kısa adı
-
-    $teamNames  =  $api->getTeamNames();
+```
+$teamNames  =  $api->getTeamNames();
     foreach ($teamNames  as  $team) {
     	print  $team->name;
     	print  $team->middleName;
     	print  $team->shortName;
     }
-
+```
 **Basit Puan Durumunun Alınması**
 Bu alanda 4 veri dönmektedir bunlar;
  - name : Takımın adı
  - shortName : Takımın kısa adı
  - position  : Takımın ligde bulunduğu sıralama
  - points : Takımın topladığı puan
-
+```
  $teamNames  =  $api->getTeamNames();
     foreach ($teamNames  as  $team) {
     	print  $team->name;
     	print  $team->middleName;
     	print  $team->shortName;
     }
-
+```
 **Detaylı Puan Durumunun Alınması**
 Bu alanda 11 veri dönmektedir bunlar;
  - name : Takımın adı
@@ -55,18 +55,20 @@ Bu alanda 11 veri dönmektedir bunlar;
  - played :Oynanılan maç sayısı
  - won : Kazanılan maç sayısı
  - logo: Takımın logosunun web adresi
-
-    $standings  =  $api->getStandings();
-    foreach ($standings  as  $team) {
-	    print  $team->name;
-	    print  $team->middleName;
-	    print  $team->shortName;
-	    print  $team->position;
-	    print  $team->points;
-	    print  $team->against;
-	    print  $team->average;
-	    print  $team->lost;
-	    print  $team->played;
-	    print  $team->won;
-	    print  $team->logo;
-    }
+```
+$standings = $api->getStandings();
+foreach ($standings as $team) {
+    print  $team->name;
+    print  $team->middleName;
+    print  $team->shortName;
+    print  $team->position;
+    print  $team->points;
+    print  $team->against;
+    print  $team->average;
+    print  $team->lost;
+    print  $team->played;
+    print  $team->won;
+    print  $team->logo;
+}
+```
+    
